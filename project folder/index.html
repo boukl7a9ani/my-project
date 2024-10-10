@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chessboard-0.3.0.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Chess Learning Game</title>
+</head>
+<body>
+    <h1>Welcome to the Chess Learning Game!</h1>
+
+    <div id="login">
+        <h2>Choose Your Role</h2>
+        <button onclick="showStudentOptions()">Student</button>
+        <button onclick="showTeacherOptions()">Teacher</button>
+    </div>
+
+    <!-- Game Options Section -->
+    <div id="game-options" style="display: none;">
+        <h2>Choose Your Game</h2>
+        <button onclick="learnPieceMovements()">Learn How Pieces Move</button>
+        <button onclick="playScenario()">Play Scenario</button>
+        <button onclick="playAgainstAI()">Play Against AI</button>
+
+        <!-- Chessboard div -->
+        <div id="myBoard" style="width: 400px;"></div>
+    </div>
+
+    <!-- Chessboard Game Section -->
+    <div id="chessboard-container" style="display: none;">
+        <div id="board" style="width: 400px"></div>
+        <div id="status"></div> <!-- Display game status -->
+        <div id="move-history"></div> <!-- Display move history -->
+        <button id="startBtn">Start Game</button>
+    </div>
+
+    <!-- Include the chessboard library and script -->
+    <script src="chessboard-0.3.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

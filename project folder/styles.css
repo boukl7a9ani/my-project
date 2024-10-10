@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.highlight-square {
+    background-color: rgba(0, 255, 0, 0.5) !important; /* Green highlighting */
+}
+
+#chessboard-container {
+    margin-top: 20px;
+}
